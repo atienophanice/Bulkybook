@@ -1,6 +1,6 @@
 ﻿namespace Bulkybookweb.Data
 {
-    public class ApplicationDbContext
+    public class ApplicationDbContext:DbContext
     {
     }
 }
