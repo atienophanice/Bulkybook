@@ -7,7 +7,26 @@
 
 <table class = "table table-boardered table-stripped" style="width;100">
     <thead>
-
+        <tr>
+          <th> 
+              Category Name
+          </th>
+          Display Order
+        </tr>
     </thead>
+    <tbody>
+        @foreach(var obj in model)
+        {
+           <tr>
+               <td width="50%">
+                   @obj.Name
+               </td>
+               <td width="30%">
+                   @obj.DislayOrder
+               </td>
+           </tr>
+
+        }
+    </tbody>
 </table>
     
