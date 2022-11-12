@@ -5,25 +5,42 @@
 
 <h1>Index Category</h1>
 
-<table class = "table table-boardered table-stripped" style="width;100">
+<table class = "table table-boardered table-striped" style="width:100%">
     <thead>
         <tr>
           <th> 
               Category Name
           </th>
-          Display Order
+             <th>
+             Display Order
+                 </th>
+                 <th>
+                      Id
+                 </th>
+                 <th>
+                     DateTime
+                 </th>
+         
         </tr>
     </thead>
     <tbody>
-        @foreach(var obj in model)
+        @foreach(var obj in Model)
         {
            <tr>
                <td width="50%">
                    @obj.Name
                </td>
+
                <td width="30%">
-                   @obj.DislayOrder
+                   @obj.DisplayOrder
                </td>
+                <td width="30%">
+                   @obj.Id
+                </td>
+                <td width="50%">
+                    @obj.CreatedDateTime
+                </td>
+
            </tr>
 
         }
