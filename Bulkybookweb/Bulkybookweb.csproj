@@ -7,6 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\css\Boostwatchtheme.css" />
+    <Content Remove="wwwroot\css\Bootswatchtheme.css" />
+    <Content Remove="wwwroot\css\StyleSheet.css" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Controllers\StyleSheet.css" />
   </ItemGroup>
 
