@@ -14,11 +14,18 @@ namespace Bulkybookweb.Controllers
         }
         public IActionResult Index()
         {
-           IEnumerable <Category> objCategoryList=_db.Categories;
+            IEnumerable<Category> objCategoryList = _db.Categories;
             return View(objCategoryList);
         }
-
+        // Get
         public IActionResult Create()
+        {
+            IEnumerable<Category> objCategoryList = _db.Categories;
+            return View();
+        }
+        // POST
+
+        public IActionResult Create(Category obj)
         {
             IEnumerable<Category> objCategoryList = _db.Categories;
             return View();
