@@ -24,7 +24,8 @@ namespace Bulkybookweb.Controllers
             return View();
         }
         // POST
-
+        [HttpPost]
+        [AutoValidateAntiforgeryToken]  
         public IActionResult Create(Category obj)
         {
             IEnumerable<Category> objCategoryList = _db.Categories;
