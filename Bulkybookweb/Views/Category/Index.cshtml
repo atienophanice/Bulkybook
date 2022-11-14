@@ -5,14 +5,16 @@
 <div class="container p-3">
     <div class="row pt-4">
          <div  class=" col-6">
-             <h2 class="text-primary ">Category</h2>
+             <h2 class="text-primary ">Category List</h2>
          </div>
          <div class=" col-6">
-
+             <a asp-controller="category" asp-action="create" class=" btn btn-primary">
+                 create New Category
+             </a>
          </div>
     </div>
-</div>
-<h1>Index Category</h1>
+
+
 
 <table class = "table table-boardered table-striped" style="width:100%">
     <thead>
@@ -55,5 +57,4 @@
         }
     </tbody>
 </table>
-    
-    
+</div>
