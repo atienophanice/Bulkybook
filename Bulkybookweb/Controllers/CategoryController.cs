@@ -28,8 +28,10 @@ namespace Bulkybookweb.Controllers
         [AutoValidateAntiforgeryToken]  
         public IActionResult Create(Category obj)
         {
-            IEnumerable<Category> objCategoryList = _db.Categories;
-            return View();
+            _db.Categories.Add(obj);
+            _db.SaveChanges();
+
+            return RedirectToAction("Index");
         }
     }
 }
